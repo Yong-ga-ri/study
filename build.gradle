@@ -27,10 +27,12 @@ repositories { // 어떤 원격 저장소에서 받을지를 정함
 }
 
 dependencies { // 프로젝트 개발에 필요한 의존성들을 선언하는 곳
-//    compile('org.springframework.boot:spring-boot-starter-web') // deprecated
-    implementation('org.springframework.boot:spring-boot-starter-web')
-//    testCompile('org.springframework.boot:spring-boot-starter-test') // deprecated
-    testImplementation('org.springframework.boot:spring-boot-starter-test')
+    compile('org.springframework.boot:spring-boot-starter-web') // deprecated
+//    implementation('org.springframework.boot:spring-boot-starter-web')
+    compile('org.projectlombok:lombok')
+//    implementation('org.projectlombok:lombok')
+    testCompile('org.springframework.boot:spring-boot-starter-test') // deprecated
+//    testImplementation('org.springframework.boot:spring-boot-starter-test')
 }
 
 //plugins {
